@@ -28,6 +28,15 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E525305B234C556A00F26D89"
+            BuildableName = "DeclarativeKit.framework"
+            BlueprintName = "DeclarativeKit"
+            ReferencedContainer = "container:DeclarativeKit.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">

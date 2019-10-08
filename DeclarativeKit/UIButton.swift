@@ -9,20 +9,20 @@
 import UIKit
 
 extension UIButton {
-    internal func attributedTitle(_ title: NSAttributedString, state: UIControl.State = .normal) -> Self {
-        setAttributedTitle(title, for: .normal)
+    /// Set Button Title
+    /// - Parameter title: String
+    /// - Parameter state: State of Title, default to .normal
+    public func title(_ title: String?, for state: UIControl.State = .normal) -> Self {
+        setTitle(title, for: state)
         
         return self
     }
     
-    internal func backgroundColor(_ color: UIColor?) -> Self {
-        backgroundColor = color
-        
-        return self
-    }
-    
-    internal func cornerRadius(_ radius: CGFloat) -> Self {
-        layer.cornerRadius = radius
+    /// Set Button title with NSAttributedString
+    /// - Parameter title: NSAttributedString
+    /// - Parameter state: State of title, default to .normal
+    public func attributedTitle(_ title: NSAttributedString?, for state: UIControl.State = .normal) -> Self {
+        setAttributedTitle(title, for: state)
         
         return self
     }

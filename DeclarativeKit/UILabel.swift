@@ -9,11 +9,19 @@
 import UIKit
 
 extension UILabel {
+    /// Set text
+    /// - Parameter value: String
+    public func text(_ value: String?) -> Self {
+        text = value
+        
+        return self
+    }
+    
     /// Set Attributed string
     ///
     /// - Parameter attributedString: NSAttributedString
     /// - Returns: UILabel
-    internal func attributedString(_ attributedString: NSAttributedString) -> Self {
+    public func attributedString(_ attributedString: NSAttributedString?) -> Self {
         attributedText = attributedString
 
         return self

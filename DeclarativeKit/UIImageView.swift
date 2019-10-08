@@ -9,13 +9,9 @@
 import UIKit
 
 extension UIImageView {
-    internal func size(_ size: CGSize) -> Self {
-        self.frame.size = size
-        
-        return self
-    }
-    
-    internal func image(_ image: UIImage?) -> Self {
+    /// Set UIImageView Image
+    /// - Parameter image: Optional UIImageView
+    public func image(_ image: UIImage?) -> Self {
         self.image = image
         
         return self
