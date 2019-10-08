@@ -7,7 +7,8 @@ There're a lots of reasons to love declarative.
 
 Example: 
 ```
-         UIButton()
+         UIButton
+            .init()
             .title("Button")
             .accessibilityIdentifier("detailButton")
             .backgroundColor(.black)
