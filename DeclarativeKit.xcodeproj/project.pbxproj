@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		E5253066234C556A00F26D89 /* DeclarativeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E525305C234C556A00F26D89 /* DeclarativeKit.framework */; };
 		E525306D234C556A00F26D89 /* DeclarativeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E525305F234C556A00F26D89 /* DeclarativeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5253077234C56B700F26D89 /* UILabel+Declarative.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5253076234C56B700F26D89 /* UILabel+Declarative.swift */; };
-		E5253079234C56CD00F26D89 /* UIButton+Declarative.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5253078234C56CD00F26D89 /* UIButton+Declarative.swift */; };
-		E525307B234C56E900F26D89 /* UIImageView+Declarative.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307A234C56E900F26D89 /* UIImageView+Declarative.swift */; };
-		E525307D234C56F700F26D89 /* UIView+Declarative.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307C234C56F700F26D89 /* UIView+Declarative.swift */; };
+		E5253077234C56B700F26D89 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5253076234C56B700F26D89 /* UILabel.swift */; };
+		E5253079234C56CD00F26D89 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5253078234C56CD00F26D89 /* UIButton.swift */; };
+		E525307B234C56E900F26D89 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307A234C56E900F26D89 /* UIImageView.swift */; };
+		E525307D234C56F700F26D89 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307C234C56F700F26D89 /* UIView.swift */; };
 		E525307F234C571B00F26D89 /* DeclarativeUILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307E234C571B00F26D89 /* DeclarativeUILabelTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,10 +32,10 @@
 		E5253060234C556A00F26D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5253065234C556A00F26D89 /* DeclarativeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeclarativeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E525306C234C556A00F26D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5253076234C56B700F26D89 /* UILabel+Declarative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Declarative.swift"; sourceTree = "<group>"; };
-		E5253078234C56CD00F26D89 /* UIButton+Declarative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Declarative.swift"; sourceTree = "<group>"; };
-		E525307A234C56E900F26D89 /* UIImageView+Declarative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Declarative.swift"; sourceTree = "<group>"; };
-		E525307C234C56F700F26D89 /* UIView+Declarative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Declarative.swift"; sourceTree = "<group>"; };
+		E5253076234C56B700F26D89 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		E5253078234C56CD00F26D89 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		E525307A234C56E900F26D89 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		E525307C234C56F700F26D89 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E525307E234C571B00F26D89 /* DeclarativeUILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarativeUILabelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,10 +81,10 @@
 			children = (
 				E525305F234C556A00F26D89 /* DeclarativeKit.h */,
 				E5253060234C556A00F26D89 /* Info.plist */,
-				E5253076234C56B700F26D89 /* UILabel+Declarative.swift */,
-				E5253078234C56CD00F26D89 /* UIButton+Declarative.swift */,
-				E525307A234C56E900F26D89 /* UIImageView+Declarative.swift */,
-				E525307C234C56F700F26D89 /* UIView+Declarative.swift */,
+				E5253076234C56B700F26D89 /* UILabel.swift */,
+				E5253078234C56CD00F26D89 /* UIButton.swift */,
+				E525307A234C56E900F26D89 /* UIImageView.swift */,
+				E525307C234C56F700F26D89 /* UIView.swift */,
 			);
 			path = DeclarativeKit;
 			sourceTree = "<group>";
@@ -208,10 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5253079234C56CD00F26D89 /* UIButton+Declarative.swift in Sources */,
-				E525307B234C56E900F26D89 /* UIImageView+Declarative.swift in Sources */,
-				E5253077234C56B700F26D89 /* UILabel+Declarative.swift in Sources */,
-				E525307D234C56F700F26D89 /* UIView+Declarative.swift in Sources */,
+				E5253079234C56CD00F26D89 /* UIButton.swift in Sources */,
+				E525307B234C56E900F26D89 /* UIImageView.swift in Sources */,
+				E5253077234C56B700F26D89 /* UILabel.swift in Sources */,
+				E525307D234C56F700F26D89 /* UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
