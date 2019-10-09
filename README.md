@@ -1,5 +1,5 @@
 # [WIP] declarative-kit
-[![Build Status](https://travis-ci.org/wendyliga/declarative-kit.svg?branch=master)](https://travis-ci.org/wendyliga/declarative-kit)
+[![Build Status](https://travis-ci.org/wendyliga/declarative-kit.svg?branch=master)](https://travis-ci.org/wendyliga/declarative-kit) [![codecov](https://codecov.io/gh/wendyliga/declarative-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/wendyliga/declarative-kit)
 
 Declarative Wrapper on top UIKit
 
