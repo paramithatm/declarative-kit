@@ -7,8 +7,7 @@ env:
     - TEST_SDK=iphonesimulator13.0 PLATFORM='iOS Simulator' OS=11.4 NAME='iPhone 6'
 
 before_install:
-    - brew update
-    - brew install xctool
+    - gem install slather
 script:
   # build
   - set -o pipefail && xcodebuild -project DeclarativeKit.xcodeproj -scheme DeclarativeKit -sdk $TEST_SDK -destination "platform=$PLATFORM,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=NO
@@ -16,4 +15,5 @@ script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project DeclarativeKit.xcodeproj -scheme DeclarativeKit -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - slather
+  - bash <(curl -s https://codecov.io/bash) -f reports/cobertura.xml -X coveragepy -X gcov -X xcode
