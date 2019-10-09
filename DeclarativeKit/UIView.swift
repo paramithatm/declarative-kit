@@ -83,6 +83,27 @@ extension UIView {
         return self
     }
     
+    /// Add view
+    /// - Parameter view: UIView
+    public func addView(_ view: UIView) -> Self {
+        addSubview(view)
+        
+        return self
+    }
+    
+    /// Add Current View to Another View
+    /// - Parameter parent: UIView
+    public func addToView(_ parent: UIView) -> Self {
+        parent.addSubview(self)
+        
+        return self
+    }
+    
+    /// Disposed your current pipeline
+    public func end() -> Void {
+        return ()
+    }
+    
     // MARK: - Layer
     
     /// Set corner radius

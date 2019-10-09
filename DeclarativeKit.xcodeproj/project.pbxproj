@@ -17,6 +17,7 @@
 		E525307B234C56E900F26D89 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307A234C56E900F26D89 /* UIImageView.swift */; };
 		E525307D234C56F700F26D89 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307C234C56F700F26D89 /* UIView.swift */; };
 		E525307F234C571B00F26D89 /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525307E234C571B00F26D89 /* UILabelTests.swift */; };
+		E5253085234D6E4200F26D89 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5253084234D6E4200F26D89 /* UIStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E525307A234C56E900F26D89 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		E525307C234C56F700F26D89 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E525307E234C571B00F26D89 /* UILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTests.swift; sourceTree = "<group>"; };
+		E5253084234D6E4200F26D89 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				E5253078234C56CD00F26D89 /* UIButton.swift */,
 				E525307A234C56E900F26D89 /* UIImageView.swift */,
 				E525307C234C56F700F26D89 /* UIView.swift */,
+				E5253084234D6E4200F26D89 /* UIStackView.swift */,
 			);
 			path = DeclarativeKit;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				E5253079234C56CD00F26D89 /* UIButton.swift in Sources */,
 				E525307B234C56E900F26D89 /* UIImageView.swift in Sources */,
+				E5253085234D6E4200F26D89 /* UIStackView.swift in Sources */,
 				E5253077234C56B700F26D89 /* UILabel.swift in Sources */,
 				E525307D234C56F700F26D89 /* UIView.swift in Sources */,
 			);
