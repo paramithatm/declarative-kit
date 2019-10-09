@@ -1,10 +1,19 @@
-language: objective-c
-
-osx_image: xcode10.1
+language: swift
+osx_image: xcode11
 env:
   matrix:
-    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone XR'
-    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
+    - TEST_SDK=iphonesimulator13.0 PLATFORM='iOS Simulator' OS=13.0 NAME='iPhone 8'
+    - TEST_SDK=iphonesimulator13.0 PLATFORM='iOS Simulator' OS=12.1 NAME='iPhone 7'
+    - TEST_SDK=iphonesimulator13.0 PLATFORM='iOS Simulator' OS=11.4 NAME='iPhone 6'
 
+before_install:
+    - brew update
+    - brew install xctool
 script:
+  # build
+  - set -o pipefail && xcodebuild -project DeclarativeKit.xcodeproj -scheme DeclarativeKit -sdk $TEST_SDK -destination "platform=$PLATFORM,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=NO
+  # test  
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project DeclarativeKit.xcodeproj -scheme DeclarativeKit -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
