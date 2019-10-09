@@ -27,7 +27,7 @@ extension UIView {
         return self
     }
     
-    /// s=Set Size
+    /// Set Size
     /// - Parameter size: CGSize
     public func size(_ size: CGSize) -> Self {
         frame.size = size
