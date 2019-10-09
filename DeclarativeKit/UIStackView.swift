@@ -11,7 +11,7 @@ import UIKit
 extension UIStackView {
     /// Add ArrangeView
     /// - Parameter view: UIView
-    internal func arrangeView(_ view: UIView) -> Self {
+    public func arrangeView(_ view: UIView) -> Self {
         addArrangedSubview(view)
         
         return self
@@ -19,7 +19,7 @@ extension UIStackView {
     
     /// Add Multiple ArrangeView
     /// - Parameter views: Array of UIView
-    internal func arrangeViews(_ views: [UIView]) -> Self {
+    public func arrangeViews(_ views: [UIView]) -> Self {
         views.forEach { view in
             addArrangedSubview(view)
         }
@@ -29,7 +29,7 @@ extension UIStackView {
     
     /// Set Layout Margin
     /// - Parameter insets: UIEdgeInsets
-    internal func layoutMargins(_ insets: UIEdgeInsets) -> Self {
+    public func layoutMargins(_ insets: UIEdgeInsets) -> Self {
         layoutMargins = insets
 
         isLayoutMarginsRelativeArrangement = true
@@ -39,7 +39,7 @@ extension UIStackView {
     
     /// Set Stack Axis
     /// - Parameter axis: NSLayoutConstraint.Axis
-    internal func axis(_ axis: NSLayoutConstraint.Axis) -> Self {
+    public func axis(_ axis: NSLayoutConstraint.Axis) -> Self {
         self.axis = axis
 
         return self
@@ -47,7 +47,7 @@ extension UIStackView {
     
     /// Set Stack Distribution
     /// - Parameter distribution: UIStackView.Distribution
-    internal func distribution(_ distribution: UIStackView.Distribution) -> Self {
+    public func distribution(_ distribution: UIStackView.Distribution) -> Self {
         self.distribution = distribution
 
         return self
@@ -55,7 +55,7 @@ extension UIStackView {
     
     /// Set Stack Spacing
     /// - Parameter spacing: CGFloat
-    internal func spacing(_ spacing: CGFloat) -> Self {
+    public func spacing(_ spacing: CGFloat) -> Self {
         self.spacing = spacing
 
         return self
