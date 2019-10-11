@@ -16,4 +16,13 @@ extension UIImageView {
         
         return self
     }
+    
+    /// Set UIImageView Image
+    /// - Parameter imageName: Image Name
+    /// - Parameter bundle: Optional Bundle
+    public func image(_ imageName: String, bundle: Bundle? = nil) -> Self {
+        self.image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
+        
+        return self
+    }
 }
