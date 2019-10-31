@@ -93,6 +93,23 @@ internal final class UIViewTests: XCTestCase {
         
         XCTAssertTrue(view.accessibilityLabel == UIViewTests.expectedDefaultViewAccessibilityLabel)
     }
+    
+    internal func testAddViewToSelf_withValue_shouldReturnViewWithSubview() {
+        let subview = UIView()
+        let view = UIView()
+            .addView(subview)
+        
+        XCTAssertTrue(subview.isDescendant(of: view))
+    }
+    
+    internal func testAddSelfToView_withValue_shouldReturnViewWithSuperview() {
+        let superView = UIView()
+        let view = UIView()
+            .addToView(superView)
+        
+        XCTAssertTrue(view.isDescendant(of: superView))
+    }
+    
 }
 
 extension UIViewTests {
