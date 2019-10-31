@@ -67,7 +67,7 @@ extension UIView {
         return self
     }
     
-    /// Set user interaaction
+    /// Set user interaction
     /// - Parameter isEnable: Bool
     public func isUserInteractionEnabled(_ isEnable: Bool) -> Self {
         isUserInteractionEnabled = isEnable
